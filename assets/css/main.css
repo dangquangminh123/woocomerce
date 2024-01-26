@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+}
+
+#wrapper {
+    background: #ffffff;
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+}
+
+/* Header */
+
+#wrapper .header {
+    padding-top: 14px;
+    justify-content: space-around;
+}
+
+#wrapper .header .navbar-header {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+}
+
+#wrapper .header .navbar-header img {
+    width: auto;
+    height: 50px;
+    padding-right: 38px
+}
+
+#wrapper .header .navbar-header li {
+    padding: 0px 12px;
+    padding-top: 7px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    display: block;
+}
+
+#wrapper .header .navbar-header li:hover {
+    color: #01a050;
+}
+
+form#search-box {
+    padding-left: 13px;
+}
+form#search-box button {
+    background: none;
+    border: none;
+    color: #a9a9a9;
+    padding: 9px 10px;
+}
+
+form#search-box button i {
+    color: #111111;
+}
+
+.fa-bag-shopping:before, .fa-shopping-bag:before {
+    content: "\f290";
+    font-size: 24px;
+}
+
+
+form#search-box::placeholder {
+    color: #bfbfbf;
+    font-style: italic;
+    font-size: 9px;
+}
+
+/* Banner && Voucher*/
+.banner {
+    margin-top: 29px;
+    background: url("../images/slider8.png");
+    min-height: 600px;
+    background-size: cover;
+}
+
+#wrapper ul.our-vourcher {
+    margin-top: 49px;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+ul.our-vourcher li.freeship-noithanh {
+    list-style: none;
+    padding: 0px;
+}
+
+.our-vourcher li.freeship-noithanh a {
+    text-decoration: none;
+    padding: 14px 42px;
+    position: relative;
+    background-color: #c97278;
+}
+
+.our-vourcher li.freeship-noithanh:nth-child(2) a {
+    background-color: #c0ab90;
+} 
+
+.our-vourcher li.freeship-noithanh:nth-child(3) a {
+    background-color: #7f8fa0;
+} 
+.our-vourcher li.freeship-noithanh .items-description {
+    font-weight: bold;
+    color: #ffff;
+    font-size: 16px;
+}
+
+.our-vourcher li.freeship-noithanh .items-description::after {
+    font-family: fontawesome;
+    margin-left: 10px;
+    position: absolute;
+    top: -1%;
+    right: -12%;
+    content: '\f07a';
+    font-size: 17px;
+    padding: 12px 17px;
+    background-color: #b4666c;
+    color: #ffffff;
+}
+
+.our-vourcher li.freeship-noithanh:nth-child(2) .items-description::after {
+    font-family: fontawesome;
+    content: '\f06b';
+    background-color: #ac9981;
+}
+
+.our-vourcher li.freeship-noithanh:nth-child(3) .items-description::after {
+    font-family: fontawesome;
+    content: '\f1d8';
+    background-color: #728090;
+}
+
+/* End Banner && Voucher*/
+
+/* Box product */
+.box {
+    margin-top: 40px;
+}
+
+.box .box-header .product-popular {
+    text-align: center;
+    color: #000000;
+}
+
+.box .box-body {
+    margin-top: 24px;
+    margin-bottom: 9px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.box .box-body .product-item {
+    border: 1px solid #c9c9c9;
+    margin: 0px 10px;
+    align-items: center;
+    padding: 0px 0px 5px 0px;
+}
+
+.box .box-body .product-item:first-child {
+    margin-left: 0px;
+}
+
+.box .box-body .product-item:last-child {
+    margin-right: 0px;
+}
+
+.box .box-body .product-item .item-images {
+    max-width: 100%;
+    overflow: hidden;
+    display: block;
+}
+
+.box .box-body .product-item .item-name {
+    text-align: center;
+    padding: 15px 0px 5px 0px;
+}
+
+.box .box-body .product-item .item-name .name-content {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: #212121;
+}
+
+.box .box-body .product-item .price-item {
+    text-align: center;
+    color: #b74851;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 6px 5px 15px 0px;
+}
+
+.box .box-body .product-item .price-item .price-discount {
+    text-decoration: line-through;
+    color: #8d8d8d;
+    padding-left: 9px;
+    font-weight: 500;
+}
+
+.box .box-body .product-item .btn-items {
+    text-align: center;
+}
+
+.box .box-body .product-item .add-to-cart {
+    background-color: #d3cbcb;
+    font-weight: bold;
+    color: #444444;
+    border-radius: 15px;
+    padding: 10px 30px;
+    outline: none;
+    font-size: 15px;
+    border: none;
+}
+
+/* End Box Product */
+
+/* Watch All */
+.watch-all {
+   padding: 15px 0px 20px 0px;
+    text-align: center;
+}
+
+.watch-all .all-product {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: #272727;
+    border-bottom: 2px solid #272727;
+}
+/* End Watch All */
+
+/* Trend  */
+.trend-clothes {
+   padding-top: 30px;
+}
+
+.trend-clothes .trend-title {
+    
+}
+
+.trend-clothes .trend-title .content-title {
+    text-align: center;
+    font-weight: 400;
+}
+
+.trend-clothes .trend-body .list-trend {
+    padding: 0px;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.trend-clothes .trend-body .list-trend li.trend-items {
+    flex-basis: 360px;
+    padding: 0px 15px;
+}
+
+.trend-clothes .trend-body .list-trend li.trend-items:first-child {
+    padding-left: 0px;
+}
+
+.trend-clothes .trend-body .list-trend li.trend-items:last-child {
+    padding-right: 0px;
+}
+
+.trend-clothes .trend-body .list-trend li.trend-items .trend-images {
+    max-width: 100%;
+    overflow: hidden;
+    display: block;
+}
+
+.trend-clothes .trend-body .list-trend li.trend-items .trend-images img {
+
+}
+
+.trend-clothes .trend-body .list-trend li.trend-items .frontpager {
+    padding: 10px 20px 10px 0px;
+}
+
+.trend-clothes .trend-body .list-trend li.trend-items:last-child .frontpager {
+    padding-right: 50px;
+}
+
+.trend-clothes .trend-body .list-trend li.trend-items .frontpager .content {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.trend-clothes .trend-body .list-trend li.trend-items .description-trend {
+
+}
+
+.trend-clothes .trend-body .list-trend li.trend-items:last-child .description-trend {
+    padding-right: 45px;
+}
+.trend-clothes .trend-body .list-trend li.trend-items .description-trend .substance {
+    text-align: left;
+    color: #000000;
+    font-size: 16px;
+}
+
+/* End Trend */
