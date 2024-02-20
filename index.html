@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/global.css" />
@@ -8,520 +9,497 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" />
     <title>Woocomerce</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="fb-root"></div>
-    <script
-      async
-      defer
-      crossorigin="anonymous"
-      src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v18.0&appId=1646245495820347"
-      nonce="kIR4E5Pl"
-    ></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v18.0&appId=1646245495820347" nonce="kIR4E5Pl"></script>
 
     <div id="wrapper">
-      <div class="header container-fuild d-flex">
-        <ul class="navbar-header">
-          <img src="./assets/images/logo.png" alt="VIETSOZ" />
-          <li class="item-nav text-uppercase">trang chủ</li>
-          <li class="item-nav text-uppercase">về chúng tôi</li>
-          <li class="item-nav text-uppercase">sản phẩm</li>
-          <li class="item-nav text-uppercase">xu hướng</li>
-          <li class="item-nav text-uppercase">thanh toán</li>
-          <li class="item-nav text-uppercase">liên hệ</li>
-          <form action="" id="search-box">
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-            <button><i class="fa-solid fa-bag-shopping"></i></button>
-          </form>
-        </ul>
-      </div>
-      <div class="banner"></div>
-      <ul class="our-vourcher container-fuild">
-        <li class="freeship-noithanh">
-          <a href="" class="">
-            <span class="items-description text-uppercase"
-              >Free ship nội thành</span
-            >
-          </a>
-        </li>
-        <li class="freeship-noithanh">
-          <a href="" class="">
-            <span class="items-description text-uppercase"
-              >Free ship nội thành</span
-            >
-          </a>
-        </li>
-        <li class="freeship-noithanh">
-          <a href="" class="">
-            <span class="items-description text-uppercase"
-              >Free ship nội thành</span
-            >
-          </a>
-        </li>
-      </ul>
+        <div class="header container d-flex">
+            <a href="detail-product.html" id="logo-header">
+                <img src="./assets/images/logo.png" alt="VIETSOZ" />
+            </a>
+            <nav>
+                <ul class="navbar-header">
+                    <li class="text-uppercase"><a href="#" class="item-nav">trang chủ</a></li>
+                    <li class="text-uppercase"><a href="#" class="item-nav">về chúng tôi</a></li>
+                    <li class="text-uppercase"><a href="#" class="item-nav">sản phẩm</a></li>
+                    <li class="text-uppercase"><a href="#" class="item-nav">xu hướng</a></li>
+                    <li class="text-uppercase"><a href="#" class="item-nav">thanh toán</a></li>
+                    <li class="text-uppercase"><a href="#" class="item-nav">liên hệ</a></li>
+                </ul>
+            </nav>
 
-      <div class="box container-fuild">
-        <div class="box-header">
-          <h1 class="product-popular text-uppercase">sản phẩm nổi bật</h1>
-        </div>
-        <div class="box-body">
-          <div class="product-item">
-            <div class="item-images">
-              <a href="" class="">
-                <img src="./assets/images/Layer 1.png" alt="" />
-              </a>
+            <div class="header-icons">
+                <a href="#" id="search" class="icons"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#" id="shopping-bag" class="icons"><i class="fa-solid fa-bag-shopping"></i>
+                <span class="number-quantity">3</span></a>
             </div>
-            <div class="item-name">
-              <a href="#" class="name-content">T-Shirt For Girl</a>
-            </div>
-            <div class="price-item">
-              255.000đ<span class="price-discount"> 300.000đ</span>
-            </div>
-            <div class="btn-items">
-              <button class="add-to-cart text-uppercase">thêm giỏ hàng</button>
-            </div>
-          </div>
-          <div class="product-item">
-            <div class="item-images">
-              <a href="" class="">
-                <img src="./assets/images/Layer 2.png" alt="" />
-              </a>
-            </div>
-            <div class="item-name">
-              <a href="#" class="name-content">T-Shirt For Girl</a>
-            </div>
-            <div class="price-item">
-              255.000đ<span class="price-discount"> 300.000đ</span>
-            </div>
-            <div class="btn-items">
-              <button class="add-to-cart text-uppercase">thêm giỏ hàng</button>
-            </div>
-          </div>
-          <div class="product-item">
-            <div class="item-images">
-              <a href="" class="">
-                <img src="./assets/images/Layer 3.png" alt="" />
-              </a>
-            </div>
-            <div class="item-name">
-              <a href="#" class="name-content">T-Shirt For Girl</a>
-            </div>
-            <div class="price-item">
-              255.000đ<span class="price-discount"> 300.000đ</span>
-            </div>
-            <div class="btn-items">
-              <button class="add-to-cart text-uppercase">thêm giỏ hàng</button>
-            </div>
-          </div>
-          <div class="product-item">
-            <div class="item-images">
-              <a href="" class="">
-                <img src="./assets/images/Layer 4.png" alt="" />
-              </a>
-            </div>
-            <div class="item-name">
-              <a href="#" class="name-content">T-Shirt For Girl</a>
-            </div>
-            <div class="price-item">
-              255.000đ<span class="price-discount"> 300.000đ</span>
-            </div>
-            <div class="btn-items">
-              <button class="add-to-cart text-uppercase">thêm giỏ hàng</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="box container-fuild">
-        <div class="box-header">
-          <h1 class="product-popular text-uppercase">thời trang thu đông</h1>
-        </div>
-        <div class="box-body">
-          <div class="product-item">
-            <div class="item-images">
-              <a href="" class="">
-                <img src="./assets/images/Layer 5.png" alt="" />
-              </a>
-            </div>
-            <div class="item-name">
-              <a href="#" class="name-content">T-Shirt For Girl</a>
-            </div>
-            <div class="price-item">
-              255.000đ<span class="price-discount"> 300.000đ</span>
-            </div>
-            <div class="btn-items">
-              <button class="add-to-cart text-uppercase">thêm giỏ hàng</button>
-            </div>
-          </div>
-          <div class="product-item">
-            <div class="item-images">
-              <a href="" class="">
-                <img src="./assets/images/Layer 6.png" alt="" />
-              </a>
-            </div>
-            <div class="item-name">
-              <a href="#" class="name-content">T-Shirt For Girl</a>
-            </div>
-            <div class="price-item">
-              255.000đ<span class="price-discount"> 300.000đ</span>
-            </div>
-            <div class="btn-items">
-              <button class="add-to-cart text-uppercase">thêm giỏ hàng</button>
-            </div>
-          </div>
-          <div class="product-item">
-            <div class="item-images">
-              <a href="" class="">
-                <img src="./assets/images/Layer 7.png" alt="" />
-              </a>
-            </div>
-            <div class="item-name">
-              <a href="#" class="name-content">T-Shirt For Girl</a>
-            </div>
-            <div class="price-item">
-              255.000đ<span class="price-discount"> 300.000đ</span>
-            </div>
-            <div class="btn-items">
-              <button class="add-to-cart text-uppercase">thêm giỏ hàng</button>
-            </div>
-          </div>
-          <div class="product-item">
-            <div class="item-images">
-              <a href="" class="">
-                <img src="./assets/images/Layer 4.png" alt="" />
-              </a>
-            </div>
-            <div class="item-name">
-              <a href="#" class="name-content">T-Shirt For Girl</a>
-            </div>
-            <div class="price-item">
-              255.000đ<span class="price-discount"> 300.000đ</span>
-            </div>
-            <div class="btn-items">
-              <button class="add-to-cart text-uppercase">thêm giỏ hàng</button>
-            </div>
-          </div>
         </div>
 
-        <div class="box-body">
-          <div class="product-item">
-            <div class="item-images">
-              <a href="" class="">
-                <img src="./assets/images/Layer 5.png" alt="" />
-              </a>
+
+        <div class="banner"></div>
+        <div class="our-vourcher d-flex container">
+            <div class="gift-voucher">
+                <div class="content-voucher">
+                    <a href="#" class="detail-voucher">Free ship nội thành</a>
+                </div>
+                <div class="icons-vourcher">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
             </div>
-            <div class="item-name">
-              <a href="#" class="name-content">T-Shirt For Girl</a>
+            <div class="gift-voucher">
+                <div class="content-voucher">
+                    <a href="#" class="detail-voucher">Tặng thẻ thành viên</a>
+                </div>
+                <div class="icons-vourcher">
+                    <i class="fa-solid fa-gift"></i>
+                </div>
             </div>
-            <div class="price-item">
-              255.000đ<span class="price-discount"> 300.000đ</span>
+            <div class="gift-voucher">
+                <div class="content-voucher">
+                    <a href="#" class="detail-voucher">Giảm giá 25% cuối tuần</a>
+                </div>
+                <div class="icons-vourcher">
+                    <i class="fa-regular fa-paper-plane"></i>
+                </div>
             </div>
-            <div class="btn-items">
-              <button class="add-to-cart text-uppercase">thêm giỏ hàng</button>
-            </div>
-          </div>
-          <div class="product-item">
-            <div class="item-images">
-              <a href="" class="">
-                <img src="./assets/images/Layer 6.png" alt="" />
-              </a>
-            </div>
-            <div class="item-name">
-              <a href="#" class="name-content">T-Shirt For Girl</a>
-            </div>
-            <div class="price-item">
-              255.000đ<span class="price-discount"> 300.000đ</span>
-            </div>
-            <div class="btn-items">
-              <button class="add-to-cart text-uppercase">thêm giỏ hàng</button>
-            </div>
-          </div>
-          <div class="product-item">
-            <div class="item-images">
-              <a href="" class="">
-                <img src="./assets/images/Layer 7.png" alt="" />
-              </a>
-            </div>
-            <div class="item-name">
-              <a href="#" class="name-content">T-Shirt For Girl</a>
-            </div>
-            <div class="price-item">
-              255.000đ<span class="price-discount"> 300.000đ</span>
-            </div>
-            <div class="btn-items">
-              <button class="add-to-cart text-uppercase">thêm giỏ hàng</button>
-            </div>
-          </div>
-          <div class="product-item">
-            <div class="item-images">
-              <a href="" class="">
-                <img src="./assets/images/Layer 4.png" alt="" />
-              </a>
-            </div>
-            <div class="item-name">
-              <a href="#" class="name-content">T-Shirt For Girl</a>
-            </div>
-            <div class="price-item">
-              255.000đ<span class="price-discount"> 300.000đ</span>
-            </div>
-            <div class="btn-items">
-              <button class="add-to-cart text-uppercase">thêm giỏ hàng</button>
-            </div>
-          </div>
         </div>
 
-        <div class="box-body">
-          <div class="product-item">
-            <div class="item-images">
-              <a href="" class="">
-                <img src="./assets/images/Layer 5.png" alt="" />
-              </a>
+        <div class=" box container">
+            <div class="box-header ">
+                <h1 class="product-popular text-uppercase">sản phẩm nổi bật</h1>
             </div>
-            <div class="item-name">
-              <a href="#" class="name-content">T-Shirt For Girl</a>
+            <div class="box-body ">
+                <div class="product-item">
+                    <div class="item-images">
+                        <a href="#" class="product-picture">
+                            <img src="./assets/images/Layer 1.png " alt=" " />
+                        </a>
+                    </div>
+                    <div class="item-name">
+                        <a href="#" class="name-content">T-Shirt For Girl</a>
+                    </div>
+                    <div class="price-item">
+                        255.000đ<span class="price-discount"> 300.000đ</span>
+                    </div>
+                    <div class="btn-items ">
+                        <button class="add-to-cart text-uppercase">thêm giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item-images">
+                        <a href=" " class="product-picture">
+                            <img src="./assets/images/Layer 2.png " alt=" " />
+                        </a>
+                    </div>
+                    <div class="item-name">
+                        <a href="# " class="name-content ">T-Shirt For Girl</a>
+                    </div>
+                    <div class="price-item ">
+                        255.000đ<span class="price-discount "> 300.000đ</span>
+                    </div>
+                    <div class="btn-items ">
+                        <button class="add-to-cart text-uppercase ">thêm giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item-images ">
+                        <a href=" " class="product-picture">
+                            <img src="./assets/images/Layer 3.png " alt=" " />
+                        </a>
+                    </div>
+                    <div class="item-name ">
+                        <a href="# " class="name-content ">T-Shirt For Girl</a>
+                    </div>
+                    <div class="price-item ">
+                        255.000đ<span class="price-discount "> 300.000đ</span>
+                    </div>
+                    <div class="btn-items ">
+                        <button class="add-to-cart text-uppercase ">thêm giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item-images ">
+                        <a href=" " class="product-picture">
+                            <img src="./assets/images/Layer 4.png " alt=" " />
+                        </a>
+                    </div>
+                    <div class="item-name ">
+                        <a href="# " class="name-content ">T-Shirt For Girl</a>
+                    </div>
+                    <div class="price-item ">
+                        255.000đ<span class="price-discount "> 300.000đ</span>
+                    </div>
+                    <div class="btn-items ">
+                        <button class="add-to-cart text-uppercase ">thêm giỏ hàng</button>
+                    </div>
+                </div>
             </div>
-            <div class="price-item">
-              255.000đ<span class="price-discount"> 300.000đ</span>
-            </div>
-            <div class="btn-items">
-              <button class="add-to-cart text-uppercase">thêm giỏ hàng</button>
-            </div>
-          </div>
-          <div class="product-item">
-            <div class="item-images">
-              <a href="" class="">
-                <img src="./assets/images/Layer 6.png" alt="" />
-              </a>
-            </div>
-            <div class="item-name">
-              <a href="#" class="name-content">T-Shirt For Girl</a>
-            </div>
-            <div class="price-item">
-              255.000đ<span class="price-discount"> 300.000đ</span>
-            </div>
-            <div class="btn-items">
-              <button class="add-to-cart text-uppercase">thêm giỏ hàng</button>
-            </div>
-          </div>
-          <div class="product-item">
-            <div class="item-images">
-              <a href="" class="">
-                <img src="./assets/images/Layer 7.png" alt="" />
-              </a>
-            </div>
-            <div class="item-name">
-              <a href="#" class="name-content">T-Shirt For Girl</a>
-            </div>
-            <div class="price-item">
-              255.000đ<span class="price-discount"> 300.000đ</span>
-            </div>
-            <div class="btn-items">
-              <button class="add-to-cart text-uppercase">thêm giỏ hàng</button>
-            </div>
-          </div>
-          <div class="product-item">
-            <div class="item-images">
-              <a href="" class="">
-                <img src="./assets/images/Layer 4.png" alt="" />
-              </a>
-            </div>
-            <div class="item-name">
-              <a href="#" class="name-content">T-Shirt For Girl</a>
-            </div>
-            <div class="price-item">
-              255.000đ<span class="price-discount"> 300.000đ</span>
-            </div>
-            <div class="btn-items">
-              <button class="add-to-cart text-uppercase">thêm giỏ hàng</button>
-            </div>
-          </div>
         </div>
-      </div>
 
-      <div class="watch-all">
-        <a href="#" class="all-product text-uppercase">Xem Tất Cả</a>
-      </div>
+        <div class="box container">
+            <div class="box-header ">
+                <h1 class="product-popular text-uppercase">thời trang thu đông</h1>
+            </div>
+            <div class="box-body">
+                <div class="product-item ">
+                    <div class="item-images ">
+                        <a href="#" class="product-picture">
+                            <img src="./assets/images/Layer 5.png " alt=" " />
+                        </a>
+                    </div>
+                    <div class="item-name ">
+                        <a href="# " class="name-content ">T-Shirt For Girl</a>
+                    </div>
+                    <div class="price-item ">
+                        255.000đ<span class="price-discount "> 300.000đ</span>
+                    </div>
+                    <div class="btn-items ">
+                        <button class="add-to-cart text-uppercase ">thêm giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="product-item ">
+                    <div class="item-images ">
+                        <a href="#" class="product-picture">
+                            <img src="./assets/images/Layer 6.png " alt=" " />
+                        </a>
+                    </div>
+                    <div class="item-name ">
+                        <a href="# " class="name-content ">T-Shirt For Girl</a>
+                    </div>
+                    <div class="price-item ">
+                        255.000đ<span class="price-discount "> 300.000đ</span>
+                    </div>
+                    <div class="btn-items ">
+                        <button class="add-to-cart text-uppercase ">thêm giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="product-item ">
+                    <div class="item-images ">
+                        <a href="#" class="product-picture">
+                            <img src="./assets/images/Layer 7.png " alt=" " />
+                        </a>
+                    </div>
+                    <div class="item-name ">
+                        <a href="# " class="name-content ">T-Shirt For Girl</a>
+                    </div>
+                    <div class="price-item ">
+                        255.000đ<span class="price-discount "> 300.000đ</span>
+                    </div>
+                    <div class="btn-items ">
+                        <button class="add-to-cart text-uppercase ">thêm giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="product-item ">
+                    <div class="item-images ">
+                        <a href="#" class="product-picture">
+                            <img src="./assets/images/Layer 4.png " alt=" " />
+                        </a>
+                    </div>
+                    <div class="item-name ">
+                        <a href="# " class="name-content ">T-Shirt For Girl</a>
+                    </div>
+                    <div class="price-item ">
+                        255.000đ<span class="price-discount "> 300.000đ</span>
+                    </div>
+                    <div class="btn-items ">
+                        <button class="add-to-cart text-uppercase ">thêm giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
 
-      <div class="trend-clothes container-fuild">
-        <div class="trend-title">
-          <h2 class="content-title text-uppercase">xu hướng</h2>
+            <div class="box-body">
+                <div class="product-item ">
+                    <div class="item-images ">
+                        <a href="#" class="product-picture">
+                            <img src="./assets/images/Layer 5.png " alt=" " />
+                        </a>
+                    </div>
+                    <div class="item-name ">
+                        <a href="# " class="name-content ">T-Shirt For Girl</a>
+                    </div>
+                    <div class="price-item ">
+                        255.000đ<span class="price-discount "> 300.000đ</span>
+                    </div>
+                    <div class="btn-items ">
+                        <button class="add-to-cart text-uppercase ">thêm giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="product-item ">
+                    <div class="item-images ">
+                        <a href="#" class="product-picture">
+                            <img src="./assets/images/Layer 6.png " alt=" " />
+                        </a>
+                    </div>
+                    <div class="item-name ">
+                        <a href="# " class="name-content ">T-Shirt For Girl</a>
+                    </div>
+                    <div class="price-item ">
+                        255.000đ<span class="price-discount "> 300.000đ</span>
+                    </div>
+                    <div class="btn-items ">
+                        <button class="add-to-cart text-uppercase ">thêm giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="product-item ">
+                    <div class="item-images ">
+                        <a href="#" class="product-picture">
+                            <img src="./assets/images/Layer 7.png " alt=" " />
+                        </a>
+                    </div>
+                    <div class="item-name ">
+                        <a href="# " class="name-content ">T-Shirt For Girl</a>
+                    </div>
+                    <div class="price-item ">
+                        255.000đ<span class="price-discount "> 300.000đ</span>
+                    </div>
+                    <div class="btn-items ">
+                        <button class="add-to-cart text-uppercase ">thêm giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="product-item ">
+                    <div class="item-images ">
+                        <a href="#" class="product-picture">
+                            <img src="./assets/images/Layer 4.png " alt=" " />
+                        </a>
+                    </div>
+                    <div class="item-name ">
+                        <a href="# " class="name-content ">T-Shirt For Girl</a>
+                    </div>
+                    <div class="price-item ">
+                        255.000đ<span class="price-discount "> 300.000đ</span>
+                    </div>
+                    <div class="btn-items ">
+                        <button class="add-to-cart text-uppercase ">thêm giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-body">
+                <div class="product-item ">
+                    <div class="item-images ">
+                        <a href="#" class="product-picture">
+                            <img src="./assets/images/Layer 5.png " alt=" " />
+                        </a>
+                    </div>
+                    <div class="item-name ">
+                        <a href="# " class="name-content ">T-Shirt For Girl</a>
+                    </div>
+                    <div class="price-item ">
+                        255.000đ<span class="price-discount "> 300.000đ</span>
+                    </div>
+                    <div class="btn-items ">
+                        <button class="add-to-cart text-uppercase ">thêm giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="product-item ">
+                    <div class="item-images ">
+                        <a href="#" class="product-picture">
+                            <img src="./assets/images/Layer 6.png " alt=" " />
+                        </a>
+                    </div>
+                    <div class="item-name ">
+                        <a href="# " class="name-content ">T-Shirt For Girl</a>
+                    </div>
+                    <div class="price-item ">
+                        255.000đ<span class="price-discount "> 300.000đ</span>
+                    </div>
+                    <div class="btn-items ">
+                        <button class="add-to-cart text-uppercase ">thêm giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="product-item ">
+                    <div class="item-images ">
+                        <a href="#" class="product-picture">
+                            <img src="./assets/images/Layer 7.png " alt=" " />
+                        </a>
+                    </div>
+                    <div class="item-name ">
+                        <a href="# " class="name-content ">T-Shirt For Girl</a>
+                    </div>
+                    <div class="price-item ">
+                        255.000đ<span class="price-discount "> 300.000đ</span>
+                    </div>
+                    <div class="btn-items ">
+                        <button class="add-to-cart text-uppercase ">thêm giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="product-item ">
+                    <div class="item-images ">
+                        <a href="#" class="product-picture">
+                            <img src="./assets/images/Layer 4.png " alt=" " />
+                        </a>
+                    </div>
+                    <div class="item-name ">
+                        <a href="# " class="name-content ">T-Shirt For Girl</a>
+                    </div>
+                    <div class="price-item ">
+                        255.000đ<span class="price-discount "> 300.000đ</span>
+                    </div>
+                    <div class="btn-items ">
+                        <button class="add-to-cart text-uppercase ">thêm giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="trend-body">
-          <ul class="list-trend d-flex">
-            <li class="trend-items">
-              <div class="trend-images">
-                <a href="#">
-                  <img src="./assets/images/xuhuong1.png" alt="" />
-                </a>
-              </div>
-              <div class="frontpager">
-                <a href="#" class="content">
-                  Phong cách thời trang cơ bản mà bạn nên biết ?
-                </a>
-              </div>
-              <div class="description-trend">
-                <p class="substance">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Tempora ipsa accusantium sequi maiores ullam, eveniet
-                  reprehenderit enim amet aliquid quam?
-                </p>
-              </div>
-            </li>
-            <li class="trend-items">
-              <div class="trend-images">
-                <a href="#">
-                  <img src="./assets/images/xuhuong2.png" alt="" />
-                </a>
-              </div>
-              <div class="frontpager">
-                <a href="#" class="content">
-                  Phong cách thời trang cơ bản mà bạn nên biết ?
-                </a>
-              </div>
-              <div class="description-trend">
-                <p class="substance">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Tempora ipsa accusantium sequi maiores ullam, eveniet
-                  reprehenderit enim amet aliquid quam?
-                </p>
-              </div>
-            </li>
-            <li class="trend-items">
-              <div class="trend-images">
-                <a href="#">
-                  <img src="./assets/images/xuhuong3.png" alt="" />
-                </a>
-              </div>
-              <div class="frontpager">
-                <a href="#" class="content">
-                  Phong cách thời trang cơ bản mà bạn nên biết ?
-                </a>
-              </div>
-              <div class="description-trend">
-                <p class="substance">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Tempora ipsa accusantium sequi maiores ullam, eveniet
-                  reprehenderit enim amet aliquid quam?
-                </p>
-              </div>
-            </li>
-          </ul>
+
+        <div class="watch-all ">
+            <a href="# " class="all-product text-uppercase ">Xem Tất Cả</a>
         </div>
-      </div>
 
-      <!-- Vourcher -->
-      <div class="vourcher-gift">
-        <h3 class="title-voucher-gift text-uppercase">
-          đăng ký để nhận khuyến mãi
-        </h3>
-        <p class="small-content-gift">
-          Đăng ký để nhận được thông tin khuyến mãi mới nhất
-        </p>
-        <form class="info-voucher">
-          <input
-            type="email"
-            class="email-voucher"
-            placeholder="nhập email của bạn"
-          />
-          <button class="btn-voucher">đăng ký</button>
-        </form>
-      </div>
-      <!-- End vourcher -->
+        <div class="trend-clothes container">
+            <div class="trend-title">
+                <h2 class="content-title text-uppercase ">xu hướng</h2>
+            </div>
+            <div class="trend-body">
+                <ul class="list-trend d-flex ">
+                    <li class="trend-items ">
+                        <div class="trend-images">
+                            <a href="#" class="trend-picture">
+                                <img src="./assets/images/xuhuong1.png " alt=" " />
+                            </a>
+                        </div>
+                        <div class="frontpager ">
+                            <a href="# " class="content ">
+                                Phong cách thời trang cơ bản mà bạn nên biết ?
+                            </a>
+                        </div>
+                        <div class="description-trend ">
+                            <p class="substance ">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora ipsa accusantium sequi maiores ullam, eveniet reprehenderit enim amet aliquid quam?
+                            </p>
+                        </div>
+                    </li>
+                    <li class="trend-items ">
+                        <div class="trend-images">
+                            <a href="#" class="trend-picture">
+                                <img src="./assets/images/xuhuong2.png " alt=" " />
+                            </a>
+                        </div>
+                        <div class="frontpager ">
+                            <a href="# " class="content ">
+                                Phong cách thời trang cơ bản mà bạn nên biết ?
+                            </a>
+                        </div>
+                        <div class="description-trend ">
+                            <p class="substance ">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora ipsa accusantium sequi maiores ullam, eveniet reprehenderit enim amet aliquid quam?
+                            </p>
+                        </div>
+                    </li>
+                    <li class="trend-items ">
+                        <div class="trend-images">
+                            <a href="#" class="trend-picture">
+                                <img src="./assets/images/xuhuong3.png " alt=" " />
+                            </a>
+                        </div>
+                        <div class="frontpager ">
+                            <a href="# " class="content">
+                                Phong cách thời trang cơ bản mà bạn nên biết ?
+                            </a>
+                        </div>
+                        <div class="description-trend">
+                            <p class="substance ">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora ipsa accusantium sequi maiores ullam, eveniet reprehenderit enim amet aliquid quam?
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div id="page-navigation">
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-circle"></i>
+                </div>
+            </div>
 
-      <!-- Footer -->
-      <div id="wp-footer">
-        <div class="container d-flex justify-content-between">
-          <div class="about-us">
-            <div class="title-footer-header text-uppercase">
-              <a href="#">
-                <img src="./assets/images/logo-footer.png" />
-              </a>
-            </div>
-            <div class="footer-body">
-              <div class="content-footer">
-                <p>
-                  Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc
-                  và rõ nghĩa dễ gây rối trí và cản trở việc tập trung vào yếu
-                  tố trình bày văn bản. Lorem Ipsum có ưu điểm hơn so với đoạn
-                  văn bản chỉ gồm nội dung kiểu "Nội dung, nội dung, nội dung"
-                  là nó khiến văn
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="category-us">
-            <div class="title-footer-header text-uppercase">danh mục</div>
-            <div class="footer-body">
-              <ul class="list-cate">
-                <li>
-                  <a href="#" class="cate-items">Thời trang thu đông</a>
-                </li>
-                <li>
-                  <a href="#" class="cate-items">Thời trang thu đông</a>
-                </li>
-                <li>
-                  <a href="#" class="cate-items">Thời trang thu đông</a>
-                </li>
-                <li>
-                  <a href="#" class="cate-items">Thời trang thu đông</a>
-                </li>
-                <li>
-                  <a href="#" class="cate-items">Thời trang thu đông</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="new-popular">
-            <div class="title-footer-header text-uppercase">bán chạy</div>
-            <div class="footer-body">
-              <ul class="list-popular-new">
-                <li>
-                  <a href="#" class="list-items">Thời trang thu đông</a>
-                </li>
-                <li>
-                  <a href="#" class="list-items">Thời trang thu đông</a>
-                </li>
-                <li>
-                  <a href="#" class="list-items">Thời trang thu đông</a>
-                </li>
-                <li>
-                  <a href="#" class="list-items">Thời trang thu đông</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="fanpage">
-            <div class="footer-body">
-              <div
-                class="fb-page"
-                data-href="https://www.facebook.com/cuongunitop"
-                data-tabs="timeline"
-                data-width=""
-                data-height=""
-                data-small-header="false"
-                data-adapt-container-width="true"
-                data-hide-cover="false"
-                data-show-facepile="true"
-              >
-                <blockquote
-                  cite="https://www.facebook.com/cuongunitop"
-                  class="fb-xfbml-parse-ignore"
-                >
-                  <a href="https://www.facebook.com/cuongunitop"
-                    >Phan Văn Cương - Chuyên gia Truyền nghề lập trình web</a
+        </div>
+
+        <!-- Vourcher -->
+        <div class="vourcher-gift">
+            <h3 class="title-voucher-gift text-uppercase ">
+                đăng ký để nhận khuyến mãi
+            </h3>
+            <p class="small-content-gift">
+                Đăng ký để nhận được thông tin khuyến mãi mới nhất
+            </p>
+            <form class="info-voucher">
+                <input type="email " class="email-voucher " placeholder="nhập email của bạn " />
+                <button class="btn-voucher ">đăng ký</button>
+            </form>
+        </div>
+        <!-- End vourcher -->
+
+        <!-- Footer -->
+        <div id="wp-footer">
+            <div class="container d-flex justify-content-between">
+                <div class="about-us ">
+                    <div class="title-footer-header text-uppercase">
+                        <a href="#">
+                            <img src="./assets/images/logo-footer.png" />
+                        </a>
+                    </div>
+                    <div class="footer-body ">
+                        <div class="content-footer ">
+                            <p>
+                                Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung vào yếu tố trình bày văn bản. Lorem Ipsum có ưu điểm hơn so với đoạn văn bản chỉ gồm nội dung kiểu "Nội dung, nội dung, nội dung " là nó
+                                khiến văn
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-us ">
+                    <div class="title-footer-header text-uppercase ">danh mục</div>
+                    <div class="footer-body ">
+                        <ul class="list-cate ">
+                            <li>
+                                <a href="# " class="cate-items ">Thời trang thu đông</a>
+                            </li>
+                            <li>
+                                <a href="# " class="cate-items ">Thời trang thu đông</a>
+                            </li>
+                            <li>
+                                <a href="# " class="cate-items ">Thời trang thu đông</a>
+                            </li>
+                            <li>
+                                <a href="# " class="cate-items ">Thời trang thu đông</a>
+                            </li>
+                            <li>
+                                <a href="# " class="cate-items ">Thời trang thu đông</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="new-popular ">
+                    <div class="title-footer-header text-uppercase ">bán chạy</div>
+                    <div class="footer-body ">
+                        <ul class="list-popular-new ">
+                            <li>
+                                <a href="# " class="list-items ">Thời trang thu đông</a>
+                            </li>
+                            <li>
+                                <a href="# " class="list-items ">Thời trang thu đông</a>
+                            </li>
+                            <li>
+                                <a href="# " class="list-items ">Thời trang thu đông</a>
+                            </li>
+                            <li>
+                                <a href="# " class="list-items ">Thời trang thu đông</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fanpage ">
+                    <div class="footer-body ">
+                        <div class="fb-page " data-href="https://www.facebook.com/cuongunitop " data-tabs="timeline " data-width=" " data-height=" " data-small-header="false " data-adapt-container-width="true " data-hide-cover="false
+                    " data-show-facepile="true ">
+                            <blockquote cite="https://www.facebook.com/cuongunitop " class="fb-xfbml-parse-ignore ">
+                                <a href="https://www.facebook.com/cuongunitop ">Phan Văn Cương - Chuyên gia Truyền nghề lập trình web</a
                   >
                 </blockquote>
               </div>

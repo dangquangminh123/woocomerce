@@ -9,67 +9,92 @@
     height: auto;
 }
 
+
 /* Header */
 
 #wrapper .header {
-    padding-top: 14px;
-    justify-content: space-around;
+    margin-top: 14px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#wrapper .header #logo-header {
+    flex-basis: 200px;
+}
+
+#wrapper .header #logo-header img {
+    display: block;
+    max-width: 100%;
+}
+
+#wrapper .header nav {
+    flex-basis: 800px;
 }
 
 #wrapper .header .navbar-header {
     list-style: none;
+    /* flex-basis: 70%; */
     padding: 0px;
+    justify-content: space-between;
     display: flex;
-}
-
-#wrapper .header .navbar-header img {
-    width: auto;
-    height: 50px;
-    padding-right: 38px
+    align-items: center;
+    margin: 0px;
 }
 
 #wrapper .header .navbar-header li {
-    padding: 0px 12px;
-    padding-top: 7px;
-    font-weight: 500;
-    font-size: 16px;
+    display: block;
+}
+
+#wrapper .header .navbar-header li a.item-nav {
+    display: block;
+    text-decoration: none;
+    padding: 18px 0px;
+    font-weight: 400;
+    font-size: 18px;
     color: #000000;
     transition: all 0.5s ease;
     cursor: pointer;
-    display: block;
 }
 
 #wrapper .header .navbar-header li:hover {
     color: #01a050;
 }
 
-form#search-box {
-    padding-left: 13px;
-}
-form#search-box button {
-    background: none;
-    border: none;
-    color: #a9a9a9;
-    padding: 9px 10px;
+#wrapper .header .header-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-form#search-box button i {
-    color: #111111;
+.header .header-icons #search {
+    color: #000000;
+    font-size: 15px;
+    margin-right: 15px;
 }
 
-.fa-bag-shopping:before, .fa-shopping-bag:before {
-    content: "\f290";
-    font-size: 24px;
+.header .header-icons #shopping-bag {
+    font-size: 30px;
+    color: #000000;
+    position: relative;
+    bottom: 6px;
+}
+
+.header .header-icons .number-quantity {
+    position: absolute;
+    font-size: 12px;
+    color: #fff;
+    top: 28%;
+    right: 44%;
+    transform: translate(38%, 38%);
 }
 
 
-form#search-box::placeholder {
-    color: #bfbfbf;
-    font-style: italic;
-    font-size: 9px;
-}
+/* End Header */
 
-/* Banner && Voucher*/
+
+/* Banner */
+
 .banner {
     margin-top: 29px;
     background: url("../images/slider8.png");
@@ -77,72 +102,134 @@ form#search-box::placeholder {
     background-size: cover;
 }
 
-#wrapper ul.our-vourcher {
-    margin-top: 49px;
+
+/* End Banner */
+
+
+/* Voucher */
+
+.our-vourcher {
+    margin-top: 45px;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
-    display: flex;
-}
-ul.our-vourcher li.freeship-noithanh {
-    list-style: none;
-    padding: 0px;
 }
 
-.our-vourcher li.freeship-noithanh a {
-    text-decoration: none;
-    padding: 14px 42px;
-    position: relative;
+.our-vourcher .gift-voucher {
+    display: flex;
+    flex-basis: 350px;
+}
+
+.our-vourcher .gift-voucher:nth-child(1) .content-voucher {
+    flex-basis: 300px;
     background-color: #c97278;
 }
 
-.our-vourcher li.freeship-noithanh:nth-child(2) a {
+.our-vourcher .gift-voucher:nth-child(2) .content-voucher {
+    flex-basis: 300px;
     background-color: #c0ab90;
-} 
+}
 
-.our-vourcher li.freeship-noithanh:nth-child(3) a {
+.our-vourcher .gift-voucher:nth-child(3) .content-voucher {
+    flex-basis: 300px;
     background-color: #7f8fa0;
-} 
-.our-vourcher li.freeship-noithanh .items-description {
-    font-weight: bold;
-    color: #ffff;
-    font-size: 16px;
 }
 
-.our-vourcher li.freeship-noithanh .items-description::after {
-    font-family: fontawesome;
-    margin-left: 10px;
-    position: absolute;
-    top: -1%;
-    right: -12%;
-    content: '\f07a';
-    font-size: 17px;
-    padding: 12px 17px;
+.our-vourcher .gift-voucher:nth-child(1):hover .content-voucher {
+    background-color: #b34952;
+}
+
+.our-vourcher .gift-voucher:nth-child(1):hover .icons-vourcher {
+    background-color: #c97278;
+}
+
+.our-vourcher .gift-voucher .content-voucher .detail-voucher {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 17px 0px;
+    padding-left: 39px;
+}
+
+.our-vourcher .gift-voucher .icons-vourcher {
+    flex-grow: 3;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.our-vourcher .gift-voucher .icons-vourcher i {
+    font-size: 23px;
+    color: #fff;
+    padding: 0px 17px;
+    cursor: pointer;
+}
+
+.our-vourcher .gift-voucher:nth-child(1) .icons-vourcher {
     background-color: #b4666c;
-    color: #ffffff;
 }
 
-.our-vourcher li.freeship-noithanh:nth-child(2) .items-description::after {
-    font-family: fontawesome;
-    content: '\f06b';
+.our-vourcher .gift-voucher:nth-child(2) .icons-vourcher {
     background-color: #ac9981;
 }
 
-.our-vourcher li.freeship-noithanh:nth-child(3) .items-description::after {
-    font-family: fontawesome;
-    content: '\f1d8';
+.our-vourcher .gift-voucher:nth-child(3) .icons-vourcher {
     background-color: #728090;
 }
 
-/* End Banner && Voucher*/
+.our-vourcher .gift-voucher:nth-child(2):hover .content-voucher {
+    background-color: #bd9b6e;
+}
+
+.our-vourcher .gift-voucher:nth-child(2):hover .icons-vourcher {
+    background-color: #a88a65;
+}
+
+.our-vourcher .gift-voucher:nth-child(3):hover .content-voucher {
+    background-color: #6380a0;
+}
+
+.our-vourcher .gift-voucher:nth-child(3):hover .icons-vourcher {
+    background-color: #5e7591;
+}
+
+
+/* End Voucher*/
+
 
 /* Box product */
+
 .box {
     margin-top: 40px;
 }
 
-.box .box-header .product-popular {
+.box .box-header {
     text-align: center;
+}
+
+.box .box-header .product-popular {
+    font-weight: 400;
     color: #000000;
+    display: inline-block;
+    position: relative;
+}
+
+.box .box-header .product-popular::before {
+    position: absolute;
+    content: "";
+    width: 33px;
+    border: 1px solid #ddd;
+    border: 1px solid #ddd;
+    top: 49%;
+    left: -46px;
+}
+
+.box .box-header .product-popular::after {
+    position: absolute;
+    content: "";
+    width: 33px;
+    border: 1px solid #ddd;
+    top: 49%;
+    right: -46px;
 }
 
 .box .box-body {
@@ -151,7 +238,6 @@ ul.our-vourcher li.freeship-noithanh {
     display: flex;
     justify-content: space-around;
 }
-
 
 .box .box-body .product-item {
     border: 1px solid #c9c9c9;
@@ -170,13 +256,40 @@ ul.our-vourcher li.freeship-noithanh {
 
 .box .box-body .product-item .item-images {
     max-width: 100%;
+    border: 1px solid #ddd;
+    margin-bottom: 9px;
+}
+
+.box .box-body .product-item .item-images a.product-picture {
+    max-width: 100%;
     overflow: hidden;
     display: block;
+}
+
+.box .box-body .product-item .item-images a.product-picture img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.7s ease;
+}
+
+.box .box-body .product-item .item-images:hover a.product-picture img {
+    transform: scale(1.1);
 }
 
 .box .box-body .product-item .item-name {
     text-align: center;
     padding: 15px 0px 5px 0px;
+    margin-bottom: 8px;
+}
+
+.box .box-body .product-item .item-name .name-content {
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+}
+
+.box .box-body .product-item:hover .item-name .name-content {
+    color: #bcab18;
 }
 
 .box .box-body .product-item .item-name .name-content {
@@ -192,10 +305,13 @@ ul.our-vourcher li.freeship-noithanh {
     font-size: 17px;
     font-weight: bold;
     padding: 6px 5px 15px 0px;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .box .box-body .product-item .price-item .price-discount {
     text-decoration: line-through;
+    cursor: pointer;
     color: #8d8d8d;
     padding-left: 9px;
     font-weight: 500;
@@ -207,44 +323,83 @@ ul.our-vourcher li.freeship-noithanh {
 
 .box .box-body .product-item .add-to-cart {
     background-color: #d3cbcb;
-    font-weight: bold;
+    font-weight: 600;
+    width: 218px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
     color: #444444;
-    border-radius: 15px;
-    padding: 10px 30px;
+    border-radius: 22px;
+    padding: 13px 0px;
     outline: none;
     font-size: 15px;
     border: none;
+    margin-bottom: 14px;
+    transition: all 0.4s ease-in-out;
 }
+
+.box .box-body .product-item .btn-items:hover .add-to-cart {
+    background-color: #444444;
+    color: #eeeeee;
+}
+
 
 /* End Box Product */
 
+
 /* Watch All */
+
 .watch-all {
-   padding: 15px 0px 20px 0px;
+    padding: 15px 0px 20px 0px;
     text-align: center;
 }
 
 .watch-all .all-product {
     text-decoration: none;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: bold;
     color: #272727;
-    border-bottom: 2px solid #272727;
+    border-bottom: 1px solid #272727;
 }
+
+
 /* End Watch All */
 
+
 /* Trend  */
+
 .trend-clothes {
-   padding-top: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .trend-clothes .trend-title {
-    
+    text-align: center;
 }
 
 .trend-clothes .trend-title .content-title {
-    text-align: center;
     font-weight: 400;
+    color: #000000;
+    display: inline-block;
+    position: relative;
+}
+
+.trend-clothes .trend-title .content-title::before {
+    position: absolute;
+    content: "";
+    width: 33px;
+    border: 1px solid #ddd;
+    top: 49%;
+    left: -46px;
+}
+
+.trend-clothes .trend-title .content-title::after {
+    position: absolute;
+    content: "";
+    width: 33px;
+    border: 1px solid #ddd;
+    top: 49%;
+    right: -46px;
 }
 
 .trend-clothes .trend-body .list-trend {
@@ -255,7 +410,6 @@ ul.our-vourcher li.freeship-noithanh {
 
 .trend-clothes .trend-body .list-trend li.trend-items {
     flex-basis: 360px;
-    padding: 0px 15px;
 }
 
 .trend-clothes .trend-body .list-trend li.trend-items:first-child {
@@ -270,14 +424,23 @@ ul.our-vourcher li.freeship-noithanh {
     max-width: 100%;
     overflow: hidden;
     display: block;
+    margin-bottom: 15px;
 }
 
-.trend-clothes .trend-body .list-trend li.trend-items .trend-images img {
+.trend-clothes .trend-body .list-trend li.trend-items .trend-images a.trend-picture img {
+    display: block;
+    width: 100%;
+    height: 255px;
+    object-fit: cover;
+    transition: all 0.7s ease;
+}
 
+.trend-clothes .trend-body .list-trend li.trend-items .trend-images a.trend-picture:hover img {
+    transform: scale(1.1);
 }
 
 .trend-clothes .trend-body .list-trend li.trend-items .frontpager {
-    padding: 10px 20px 10px 0px;
+    text-align: justify;
 }
 
 .trend-clothes .trend-body .list-trend li.trend-items:last-child .frontpager {
@@ -285,34 +448,60 @@ ul.our-vourcher li.freeship-noithanh {
 }
 
 .trend-clothes .trend-body .list-trend li.trend-items .frontpager .content {
+    display: block;
     text-decoration: none;
     color: #000000;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 19px;
+    margin-bottom: 15px;
 }
 
-.trend-clothes .trend-body .list-trend li.trend-items .description-trend {
-
+.trend-clothes .trend-body .list-trend li.trend-items .frontpager:hover .content {
+    color: #949a18;
 }
+
+.trend-clothes .trend-body .list-trend li.trend-items .description-trend {}
 
 .trend-clothes .trend-body .list-trend li.trend-items:last-child .description-trend {
     padding-right: 45px;
+    text-align: justify;
 }
+
 .trend-clothes .trend-body .list-trend li.trend-items .description-trend .substance {
     text-align: left;
     color: #000000;
     font-size: 16px;
 }
+
+.trend-clothes .trend-body #page-navigation {
+    display: flex;
+    justify-content: center;
+    font-size: 9px;
+}
+
+.trend-clothes .trend-body #page-navigation i {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 3px;
+    transition: all 0.4s ease;
+}
+
+.trend-clothes .trend-body #page-navigation i:hover {
+    color: #949a18;
+}
+
+
 /* End Trend */
 
-/* voucher */
+
+/* voucher GIFT*/
+
 .vourcher-gift {
-    position: relative;
     padding-top: 50px;
+    padding-bottom: 60px;
     background-color: cornsilk;
     min-height: 300px;
     background-image: url("../images/form-dangky.png");
-    /* background-size: 80px; */
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -333,8 +522,7 @@ ul.our-vourcher li.freeship-noithanh {
     border: 2px solid #ffffff;
     display: flex;
     width: fit-content;
-    position: absolute;
-    right: 25%;
+    margin: 0px auto;
 }
 
 .info-voucher .email-voucher {
@@ -350,6 +538,14 @@ ul.our-vourcher li.freeship-noithanh {
     text-transform: uppercase;
 }
 
+.info-voucher .email-voucher:focus {
+    border: 1px solid rgb(240, 255, 110);
+}
+
+form.info-voucher:hover .email-voucher {
+    border: 1px solid rgb(240, 255, 110);
+}
+
 .info-voucher .btn-voucher {
     text-align: center;
     padding: 0px 10px;
@@ -360,38 +556,39 @@ ul.our-vourcher li.freeship-noithanh {
     color: #ffff;
     font-weight: bold;
 }
-/* End voucher */
+
+
+/* End voucher GIFT */
 
 
 /* Footer */
+
 #wp-footer {
     background: #1b1b1b;
     padding-top: 55px;
 }
 
 #wp-footer .about-us {
-    flex-basis: 30%;
-    padding-right: 52px;
+    flex-basis: 550px;
+    padding-right: 70px;
 }
 
-#wp-footer .about-us .footer-body .content-footer {
-
-}
+#wp-footer .about-us .footer-body .content-footer {}
 
 #wp-footer .category-us {
-    flex-basis: 20%;
-} 
+    flex-basis: 350px;
+}
 
-#wp-footer .category-us .footer-body ul.list-cate{
+#wp-footer .category-us .footer-body ul.list-cate {
     display: block;
     padding-left: 0px;
     margin-left: 23px;
     color: #ffff;
 }
+
 #wp-footer .category-us .footer-body p {
     text-align: justify;
 }
-
 
 .category-us .footer-body ul.list-cate li {
     position: relative;
@@ -428,11 +625,11 @@ ul.our-vourcher li.freeship-noithanh {
 }
 
 #wp-footer .new-popular {
-    flex: 30%;
+    flex: 350px;
     padding-left: 6px;
 }
 
-#wp-footer .new-popular .footer-body ul.list-popular-new{
+#wp-footer .new-popular .footer-body ul.list-popular-new {
     display: block;
     padding-left: 0px;
     margin-left: 23px;
@@ -474,7 +671,7 @@ ul.our-vourcher li.freeship-noithanh {
 }
 
 #wp-footer .fanpage {
-    flex-basis: 20%;
+    /* flex-basis: 15%; */
 }
 
 #wp-footer .title-footer-header {
@@ -486,6 +683,7 @@ ul.our-vourcher li.freeship-noithanh {
 
 #wp-footer .footer-body {
     padding-right: 10px;
+    text-align: justify;
 }
 
 #wp-footer .fanpage .footer-body {
@@ -509,18 +707,23 @@ ul.our-vourcher li.freeship-noithanh {
     width: auto;
     height: auto;
 }
+
+
 /* End footer */
+
 
 /* Copyright */
 
+
 /* End coppy right */
+
 #wp-copyright {
-    /* padding-bottom: 13px; */
     background: #ffffff;
 }
 
 #wp-copyright .copy-parent .copyright {
-    padding-top: 10px;
     color: #2f2f2f;
-    font-weight: bold;
+    padding: 10px 0px;
+    margin: 0px;
+    /* font-weight: bold; */
 }
