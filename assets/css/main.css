@@ -57,7 +57,7 @@
     cursor: pointer;
 }
 
-#wrapper .header .navbar-header li:hover {
+#wrapper .header .navbar-header li:hover a.item-nav {
     color: #01a050;
 }
 
